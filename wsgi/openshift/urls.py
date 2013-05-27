@@ -7,8 +7,8 @@ from django.conf.urls import patterns, include, url#default
 
 urlpatterns = patterns('',
                        #url(r'^pools/$',include('pools.urls')),
-                       url(r'^pools/$','openshift.views.index', name='index'),
-                       url(r'^pools/two.html$','openshift.views.two',name='two')
+                       url(r'^$','openshift.views.index', name='index'),
+                       url(r'two.html/$','openshift.views.two',name='two')
                        
                        #url(r'^admin/',include(admin.site.urls)),
                        
